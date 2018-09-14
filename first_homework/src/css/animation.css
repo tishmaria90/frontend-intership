@@ -27,21 +27,21 @@
     font-size: 20px;
     line-height: 500px;
     text-align: center;
+}
 
-    .list_wrapper {
-        display: inline-block;
-        height: 27px;
+.list_wrapper {
+    display: inline-block;
+    height: 27px;
 
-        line-height: normal;
-        overflow: hidden;
-        text-align: left;
-    }
+    line-height: normal;
+    overflow: hidden;
+    text-align: left;
+}
 
-    .list {
-        position: relative;
-        top: 0;
-        
-        animation: scrol 7s infinite ease-in-out;
-        font-weight: bold;
-    }
+.list {
+    position: relative;
+    top: 0;
+    
+    animation: scrol 7s infinite ease-in-out;
+    font-weight: bold;
 }
