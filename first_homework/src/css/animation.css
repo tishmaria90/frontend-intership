@@ -45,3 +45,8 @@
     animation: scrol 7s infinite ease-in-out;
     font-weight: bold;
 }
+
+p {
+    padding: 0;
+    margin: 0;
+}
