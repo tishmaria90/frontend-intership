@@ -1,0 +1,91 @@
+.wrapper {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+input {
+    display: none;
+}
+
+label {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    position: relative;
+    box-sizing: border-box;
+
+    border: white solid 2px;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.check {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 15px;
+
+    background-color: white;
+    border-radius: 100%;
+    transition: all .5s;
+}
+
+input#radio1:checked ~ .check {
+    left: 15px;
+    left: 160px;
+}
+input#radio2:checked ~ .check {
+    left: 85px;
+    left: 230px;
+}
+input#radio3:checked ~ .check {
+    left: 155px;
+    left: 300px;
+}
+
+.background {
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    z-index: -1;
+
+    background-color: lightcoral;
+    transition: all .5s;
+}
+.background:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500px;
+    height: 100%;
+
+    background-color: lightblue;
+}
+.background:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 500px;
+    height: 100%;
+
+    background-color: lightgreen;
+}
+
+input#radio1:checked ~ .background {
+    left: 0;
+}
+input#radio2:checked ~ .background {
+    left: -500px;
+}
+input#radio3:checked ~ .background {
+    left: -1000px;
+}

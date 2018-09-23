@@ -1,0 +1,76 @@
+.wrapper {
+    position: relative;
+    display: inline-block;
+
+    background: url('../img/background.jpg') repeat 0 0 / cover;
+}
+
+.wrapper-inner {
+    margin: 30px;
+    width: 850px;
+    height: 390px;
+    overflow: hidden;
+    position: relative;
+
+    background-color: lightgoldenrodyellow;
+    border-radius: 5px;
+}
+
+.summer_wrapper {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+
+    background-color: lightblue;
+    transform: skewX(-20deg);
+    transform-origin: top;
+}
+
+.winter_wrapper {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+
+    background-color: lightcoral;
+    transform: skewX(-20deg);
+    transform-origin: bottom;
+    border-left: white solid 5px;
+}
+
+img {
+    transform: skewX(20deg);
+    height: 100%;
+    position: absolute;
+}
+.summer_wrapper img {
+    left: 0;
+}
+.winter_wrapper img {
+    right: 0;
+}
+
+.text_wrapper {
+    position: absolute;
+    width: 630px;
+    height: 30px;
+    top: calc(50% - 25px);
+    left: calc(50% - 325px);
+    display: flex;
+    align-items: center;
+
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text_wrapper > * {
+    width: 50%;
+}
