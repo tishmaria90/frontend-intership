@@ -1,0 +1,82 @@
+@import 'const'
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i')
+
+body
+    margin: 0
+    padding: 0
+    font-family: 'Roboto', sans-serif
+    font-size: 16px
+    color: $text_light
+
+p
+    margin: 0
+    padding: 0
+
+
+.yellow_screen
+    width: 100%
+    background-color: $yellow
+    display: flex
+    flex-direction: column
+
+.content
+    width: 902px
+    padding: 0 20px
+    box-sizing: border-box
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+
+.top
+    width: 100%
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+
+    .content
+        margin-top: 20px
+        margin-bottom: 20px
+
+    &__menu
+        display: flex
+        align-items: center
+        font-size: 18px
+        font-weight: 500
+        margin-right: 60px
+
+        &__item
+            margin-right: 60px
+            color: black
+            text-decoration: none
+
+        &_mobile
+            display: none
+            color: black
+            text-decoration: none
+
+.logo
+    display: flex
+    align-items: center
+    
+    &__text
+        margin-left: 15px
+        font-size: 30px
+        font-weight: 700
+
+.title
+    font-size: 30px
+    font-weight: 700
+    margin-bottom: 30px
+    color: black
+
+.subtitle
+    font-size: 20px
+    font-weight: 500
+    margin-bottom: 20px
+    color: $text_dark
+
+
+@import 'slider'
+@import 'content'
+@import 'footer'
+@import 'media'
