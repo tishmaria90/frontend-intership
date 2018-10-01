@@ -1,0 +1,37 @@
+.wrapper {
+    width: 500px;
+    height: 500px;
+    display: flex;
+}
+
+.column {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: #3a4a5d;
+    transition: all .5s;
+    cursor: pointer;
+}
+.column:nth-child(odd) {
+    background-color: #dd7b37;
+}
+.column:hover {
+    flex: 8;
+}
+
+.text {
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    transform: scale(0.3,0.3) ;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.column:hover .text {
+    transform: scale(1.0,1.0);
+    opacity: 1;
+}
