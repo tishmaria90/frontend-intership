@@ -1,0 +1,74 @@
+@media (max-width: 942px)
+    .content
+        width: 100%
+    
+@media (max-width: 700px)
+    .phone
+        display: none
+    .slider__item__content-half
+        flex: auto
+    .slider
+        padding: 30px 0 60px
+    .main-content__item
+        flex-basis: auto
+    .footer__menu
+        justify-content: flex-start
+        &__item
+            margin: 0 10px 20px
+
+    .top__menu
+        &_mobile
+            display: block
+        &__items
+            position: absolute
+            flex-direction: column
+            background-color: white
+            border-radius: 10px
+            z-index: 1
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px 2px
+            margin: 0
+            top: 60px
+            right: 30px
+            display: none
+            &:before
+                content: ''
+                position: absolute
+                border-bottom: 5px solid white
+                border-right: 5px solid transparent
+                border-left: 5px solid transparent
+                top: -5px
+                left: 20px
+        &__item
+            margin: 10px 20px
+
+        
+        &:hover .top__menu__items
+            display: flex
+        
+
+    /*.top__menu
+        position: absolute
+        flex-direction: column
+        background-color: white
+        border-radius: 10px
+        z-index: 1
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px 2px
+        margin: 0
+        top: 30px
+        right: 30px
+        display: none
+
+        &:hover
+            display: flex
+
+        &:before
+            content: ''
+            position: absolute
+            width: 30px
+            height: 30px
+            background: green
+            top: 0
+            left: 0
+
+        &__item
+            margin: 10px 20px*/
